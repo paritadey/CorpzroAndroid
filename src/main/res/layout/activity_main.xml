@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/background"
+    tools:context="com.example.parita.corpzro_parita.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="30dp"
+        android:id="@+id/mailid"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:textColorHint="#F9FEFE"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Enter User Email ID"
+        android:paddingLeft="25dp"
+        android:textColor="#F9FEFE" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mailid"
+        android:layout_marginTop="25dp"
+        android:drawablePadding="5dp"
+        android:id="@+id/name"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:textColorHint="#F9FEFE"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Enter User Full Name"
+        android:paddingLeft="25dp"
+        android:textColor="#F9FEFE" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="25dp"
+        android:id="@+id/userphoneno"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textColorHint="#F9FEFE"
+        android:singleLine="true"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Enter User Contact Number"
+        android:paddingLeft="25dp"
+        android:textColor="#F9FEFE"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/userphoneno"
+        android:layout_alignRight="@+id/userphoneno"
+        android:layout_below="@+id/userphoneno"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawablePadding="5dp"
+        android:hint="Enter Password"
+        android:password="true"
+        android:maxLength="50"
+        android:paddingLeft="25dp"
+        android:singleLine="true"
+        android:textColor="#F9FEFE"
+        android:textColorHint="#F9FEFE" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:gravity="center_horizontal"
+        android:text="Register"
+        android:textColor="#F9FEFE"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:text="Login to Account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="#F9FEFE"
+        android:id="@+id/loginlink" />
+</RelativeLayout>
